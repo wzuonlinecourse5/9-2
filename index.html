@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <title>聖多瑪斯正規華語</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+    <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<style>
+body{
+  font-family: 'Noto Sans TC',"Microsoft JhengHei", sans-serif;
+  background-color:#e1ebe9;
+   position: relative;
+      height: 100%;
+}
+
+.CHword{
+	color:#fff;
+	font-size:3rem;
+}
+.jumbotron{
+	margin:0;
+	padding:0;
+}
+tr{
+cursor: pointer;
+}
+.navbar {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index:999;
+  background-color:#e5e5e5;
+}
+li{
+	font-size:2.5vmin;
+	padding:0px 25px;
+}
+li:hover{
+ background-color:#bfbfbf;
+}
+.swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+.swiper-pagination-bullet {
+	margin:3px;	
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      font-size: 14px;
+      color:#000;
+      opacity: 1;
+      background: rgba(202,219,216);
+    }
+    .swiper-pagination-bullet-active {
+      color:#fff;
+      background: rgba(66,126,116);
+	  transform: scale(0.9);
+	  transition:0.3s;
+    }
+.swiper-pagination{
+	position: static;
+}
+
+@media(min-width:768px){
+	.swiper-pagination-bullet{
+	margin:8px;	
+		width: 50px;
+      height: 50px;
+	  line-height: 50px;
+	  font-size: 18px;
+	}
+	table{
+		font-size:1.45rem;
+	}
+	.CHword{
+		font-size:3.5rem;
+	}
+}
+@media(min-width: 578px) and (max-width: 992px){
+.swiper-pagination-bullet{
+	margin:6px;	
+		width: 35px;
+      height: 35px;
+	  line-height: 35px;
+	  font-size: 16px;
+	}
+table{
+		font-size:0.6rem;
+	}
+	.CHword{
+		font-size:1.5rem;
+	}
+}
+@media(max-width: 477px){
+table{
+		font-size:1.15rem;
+	}
+	.CHword{
+		font-size:2rem;
+	}
+}
+#btn img:hover{
+	box-shadow: 2px 4px 4px 0 rgba(0, 0, 0, 0.15) ;
+	  transform: scale(1.1);
+	    transition:0.3s;
+}
+
+#btn img:active{
+	  transform: scale(0.95);
+}
+</style>
+<body>
+<!-- sound -->
+
+<audio id="R1" src="sound/1-all.mp3"></audio>
+<audio id="R1_2" src="sound/1-all2.mp3"></audio>
+<audio id="L1_1" src="sound/1-1.mp3"></audio>
+<audio id="L1_2" src="sound/1-2.mp3"></audio>
+
+<audio id="R2" src="sound/2-all.mp3"></audio>
+<audio id="L2_1" src="sound/2-1.mp3"></audio>
+<audio id="L2_2" src="sound/2-2.mp3"></audio>
+
+<audio id="R3" src="sound/3-all.mp3"></audio>
+<audio id="R3_2" src="sound/3-all2.mp3"></audio>
+<audio id="L3_1" src="sound/3-1.mp3"></audio>
+<audio id="L3_2" src="sound/3-2.mp3"></audio>
+
+
+<audio id="R4" src="sound/4-all.mp3"></audio>
+<audio id="R4_2" src="sound/4-all2.mp3"></audio>
+<audio id="L4_1" src="sound/4-1.mp3"></audio>
+<audio id="L4_2" src="sound/4-2.mp3"></audio>
+
+<audio id="R5" src="sound/5-all.mp3"></audio>
+<audio id="R5_2" src="sound/5-all2.mp3"></audio>
+<audio id="R5_3" src="sound/5-all3.mp3"></audio>
+<audio id="L5_1" src="sound/5-1.mp3"></audio>
+<audio id="L5_2" src="sound/5-2.mp3"></audio>
+<audio id="L5_3" src="sound/5-3.mp3"></audio>
+
+<audio id="R6" src="sound/6-all.mp3"></audio>
+<audio id="L6_1" src="sound/6-1.mp3"></audio>
+<audio id="L6_2" src="sound/6-2.mp3"></audio>
+
+<audio id="R7" src="sound/7-all.mp3"></audio>
+<audio id="L7_1" src="sound/7-1.mp3"></audio>
+<audio id="L7_2" src="sound/7-2.mp3"></audio>
+
+<audio id="R8" src="sound/8-all.mp3"></audio>
+<audio id="L8_1" src="sound/8-1.mp3"></audio>
+
+<audio id="R9" src="sound/9-all.mp3"></audio>
+<audio id="L9_1" src="sound/9-1.mp3"></audio>
+
+<audio id="R10" src="sound/10-all.mp3"></audio>
+<audio id="L10_1" src="sound/10-1.mp3"></audio>
+
+<audio id="R11" src="sound/11-all.mp3"></audio>
+<audio id="L11_1" src="sound/11-1.mp3"></audio>
+
+<div  class=" container" style=" background-color:#f6faf4;">
+  <div class="row">
+	<div class="col-sm-12 align-self-center">
+		<div class="swiper-pagination" data-swiper-slide-index:"99"></div>
+	</div>
+  </div>
+  </div>
+
+<br>
+
+<!-- swipe -->
+<div class="swiper-container"> 
+
+   <div class="swiper-wrapper" data-swiper-slide-index:"0">
+   
+<!-- 1 --> 
+<div id="1" name="1" class="swiper-slide">
+<div class="container" style=" background-color:#f6faf4;">
+  <div class="row">
+    <div class="col-sm-6 align-self-center" style="padding:20px;">
+	<img id="top" src="img/1.png" width="100%">
+      <table width="100%" border="0">
+		　<tr onclick="left1()">
+			　<td id="btn" width="15%" align='center' valign="middle"><img src="img/table/btn.png" width="100%"></td>
+			<td width="3%"></td>
+			　<td style="line-height:1.2; background-color:rgba(66,126,116);" width="45%" align='center' valign="middle"> 
+				<br>
+				<span class="CHword">作業/功課</span><br>
+				<span style="color:rgba(255,244,206);">zuòyè/gōngkè  </span><br><br>
+				</td>
+				<td style="color:rgba(202,219,216); background-color:rgba(74,144,132);" 
+				width="10%" align='center' valign="middle">N. </td>
+			  <td style="background-color:rgba(202,219,216);" width="40" align='center' valign="middle">homework </td>
+		　</tr>
+	  </table>
+
+    </div>
+	
+    <div class="col-sm-6 align-self-center" style="padding:20px;">
+     <table width="100%" border="0">
+		　<tr onclick="right1()">
+			　<td id="btn" width="15%" align='center' valign="middle"><img src="img/table/btn.png" width="100%"></td>
+			　<td width="85%" align='center' valign="middle"><img src="img/table/1R_test.png" width="100%"></td>
+		　</tr>
+	  </table>
+	  <br>
+	  <img src="img/table/1R.jpg" width="100%">
+    </div>
+	
+  </div>  
+  
+</div>
+</div>
+<br>
+
+<!-- 2 --> 
+<div id="2" name="2" class="swiper-slide">
+<div  class="container" style=" background-color:#f6faf4;">
+  <div class="row">
+    <div class="col-sm-6 align-self-center" style="padding:20px;">
+	<img id="top" src="img/2.png" width="100%">
+      <table width="100%" border="0">
+		　<tr onclick="left2_1()">
+			　<td id="btn" width="15%" align='center' valign="middle"><img src="img/table/btn.png" width="100%"></td>
+			<td width="3%"></td>
+			　<td style="line-height:1.2; background-color:rgba(66,126,116);" width="33%" align='center' valign="middle"> 
+				<br>
+				<span class="CHword">數學</span><br>
+				<span style="color:rgba(255,244,206);">shùxué </span><br><br>
+				</td>
+				<td style="color:rgba(202,219,216); background-color:rgba(74,144,132);" 
+				width="13%" align='center' valign="middle">N.</td>
+			  <td style="background-color:rgba(202,219,216);" width="40%" align='center' valign="middle">mathematics; math</td>
+		　</tr>
+	  </table>
+    </div>
+	
+    <div class="col-sm-6 align-self-center" style="padding:20px;">
+     <table width="100%" border="0">
+		　<tr onclick="right2()">
+			　<td id="btn" width="15%" align='center' valign="middle"><img src="img/table/btn.png" width="100%"></td>
+			　<td width="85%" align='center' valign="middle"><img src="img/table/2R_test.png" width="100%"></td>
+		　</tr>
+	  </table>
+	  <br>
+	  <img src="img/table/2R.jpg" width="100%">
+    </div>
+	
+  </div>
+</div>
+</div>
+<br>
+
+<!-- 3 --> 
+<div id="3" name="3" class="swiper-slide">
+<div  class="container" style=" background-color:#f6faf4;">
+  <div class="row">
+    <div class="col-sm-6 align-self-center" style="padding:20px;">
+	<img id="top" src="img/3.png" width="100%">
+      <table width="100%" border="0">
+		　<tr onclick="left3_1()">
+			　<td id="btn" width="15%" align='center' valign="middle"><img src="img/table/btn.png" width="100%"></td>
+			<td width="3%"></td>
+			　<td style="line-height:1.2; background-color:rgba(66,126,116);" width="40%" align='center' valign="middle"> 
+				<br>
+				<span class="CHword">容易</span><br>
+				<span style="color:rgba(255,244,206);">róngyì</span><br><br>
+				</td>
+				<td style="color:rgba(202,219,216); background-color:rgba(74,144,132);" 
+				width="10%" align='center' valign="middle">Vs.</td>
+			  <td style="background-color:rgba(202,219,216);" width="40%" align='center' valign="middle">easy </td>
+		　</tr>
+	  </table>
+	  
+	   <table width="100%" border="0">
+		　<tr onclick="left3_2()">
+			　<td id="btn" width="15%" align='center' valign="middle"><img src="img/table/btn.png" width="100%"></td>
+			<td width="3%"></td>
+			　<td style="line-height:1.2; background-color:rgba(66,126,116);" width="40%" align='center' valign="middle"> 
+				<br>
+				<span class="CHword">難</span><br>
+				<span style="color:rgba(255,244,206);">nán</span><br><br>
+				</td>
+				<td style="color:rgba(202,219,216); background-color:rgba(74,144,132);" 
+				width="10%" align='center' valign="middle">Vs.</td>
+			  <td style="background-color:rgba(202,219,216);" width="40%" align='center' valign="middle">difficult; hard</td>
+		　</tr>
+	  </table>
+	  
+	  
+	  
+    </div>
+	
+    <div class="col-sm-6 align-self-center" style="padding:20px;">
+     <table width="100%" border="0">
+		　<tr onclick="right3()">
+			　<td id="btn" width="15%" align='center' valign="middle"><img src="img/table/btn.png" width="100%"></td>
+			　<td width="85%" align='center' valign="middle"><img src="img/table/3R_test.png" width="100%"></td>
+		　</tr>
+	  </table>
+	  <br>
+	  <img src="img/table/3R.jpg" width="100%">
+	  <br>
+	  <table width="100%" border="0">
+		　<tr onclick="right3_2()">
+			　<td id="btn" width="15%" align='center' valign="middle"><img src="img/table/btn.png" width="100%"></td>
+			　<td width="85%" align='center' valign="middle"><img src="img/table/3R-2_test.png" width="100%"></td>
+		　</tr>
+	  </table>
+	  <br>
+	  <img src="img/table/3R_2.jpg" width="100%">
+    </div>
+	
+	
+  </div>
+   
+  
+</div>
+</div>
+<br>
+
+<!-- 4 --> 
+<div id="4" name="4" class="swiper-slide">
+<div  class="container" style=" background-color:#f6faf4;">
+  <div class="row">
+    <div class="col-sm-6 align-self-center" style="padding:20px;">
+	<img id="top" src="img/4.png" width="100%">
+      <table width="100%" border="0">
+		　<tr onclick="left4_1()">
+			　<td id="btn" width="15%" align='center' valign="middle"><img src="img/table/btn.png" width="100%"></td>
+			<td width="3%"></td>
+			　<td style="line-height:1.2; background-color:rgba(66,126,116);" width="40%" align='center' valign="middle"> 
+				<br>
+				<span class="CHword">懂</span><br>
+				<span style="color:rgba(255,244,206);">dǒng </span><br><br>
+				</td>
+				<td style="color:rgba(202,219,216); background-color:rgba(74,144,132);" 
+				width="13%" align='center' valign="middle">Vst.</td>
+			  <td style="background-color:rgba(202,219,216);" width="50%" align='center' valign="middle">to understand</td>
+		　</tr>
+	  </table>
+	  <table width="100%" border="0">
+		　<tr onclick="left4_2()">
+			　<td id="btn" width="15%" align='center' valign="middle"><img src="img/table/btn.png" width="100%"></td>
+			<td width="3%"></td>
+			　<td style="line-height:1.2; background-color:rgba(66,126,116);" width="40%" align='center' valign="middle"> 
+				<br>
+				<span class="CHword">不懂</span><br>
+				<span style="color:rgba(255,244,206);">bù dǒng </span><br><br>
+				</td>
+				<td style="color:rgba(202,219,216); background-color:rgba(74,144,132);" 
+				width="13%" align='center' valign="middle">Vst.</td>
+			  <td style="background-color:rgba(202,219,216);" width="50%" align='center' valign="middle">not understand</td>
+		　</tr>
+	  </table>
+    </div>
+	
+    <div class="col-sm-6 align-self-center" style="padding:20px;">
+     <table width="100%" border="0">
+		　<tr onclick="right4()">
+			　<td id="btn" width="15%" align='center' valign="middle"><img src="img/table/btn.png" width="100%"></td>
+			　<td width="85%" align='center' valign="middle"><img src="img/table/4R_test.png" width="100%"></td>
+		　</tr>
+	  </table>
+	  <br>
+	  <img src="img/table/4R.jpg" width="100%">
+	  <br>
+	  <table width="100%" border="0">
+		　<tr onclick="right4_2()">
+			　<td id="btn" width="15%" align='center' valign="middle"><img src="img/table/btn.png" width="100%"></td>
+			　<td width="85%" align='center' valign="middle"><img src="img/table/4R-2_test.png" width="100%"></td>
+		　</tr>
+	  </table>
+	  <br>
+	   <img src="img/table/4R_2.jpg" width="100%">
+    </div>
+	
+  </div>
+</div>
+</div>
+<br>
+
+<!-- 5 --> 
+<div id="5" name="5" class="swiper-slide">
+<div class="container" style=" background-color:#f6faf4;">
+  <div class="row">
+    <div class="col-sm-6 align-self-center" style="padding:20px;">
+	<img id="top" src="img/5.png" width="100%">
+      <table width="100%" border="0">
+		　<tr onclick="left5_1()">
+			　<td id="btn" width="15%" align='center' valign="middle"><img src="img/table/btn.png" width="100%"></td>
+			<td width="3%"></td>
+			　<td style="line-height:1.2; background-color:rgba(66,126,116);" width="40%" align='center' valign="middle"> 
+				<br>
+				<span class="CHword">只</span><br>
+				<span style="color:rgba(255,244,206);">zhǐ </span><br><br>
+				</td>
+				<td style="color:rgba(202,219,216); background-color:rgba(74,144,132);" 
+				width="13%" align='center' valign="middle">Adv. </td>
+			  <td style="background-color:rgba(202,219,216);" width="40%" align='center' valign="middle">only; just</td>
+		　</tr>
+	  </table>	
+    </div>
+	
+    <div class="col-sm-6 align-self-center" style="padding:20px;">
+     <table width="100%" border="0">
+		　<tr onclick="right5()">
+			　<td id="btn" width="15%" align='center' valign="middle"><img src="img/table/btn.png" width="100%"></td>	
+			　<td width="85%" align='center' valign="middle"><img src="img/table/5R_test.png" width="100%"></td>
+		　</tr>
+	  </table>
+	  <br>
+	  <img src="img/table/5R.jpg" width="100%">
+    </div>
+	
+  </div>
+  
+  
+</div>
+</div>
+<br>
+
+<!-- 6 --> 
+<div id="6" name="6" class="swiper-slide">
+<div class="container" style=" background-color:#f6faf4;">
+  <div class="row">
+    <div class="col-sm-6 align-self-center" style="padding:20px;">
+	<img id="top" src="img/6.png" width="100%">
+      <table width="100%" border="0">
+		　<tr onclick="left6_1()">
+			　<td id="btn" width="15%" align='center' valign="middle"><img src="img/table/btn.png" width="100%"></td>
+			<td width="3%"></td>
+			　<td style="line-height:1.2; background-color:rgba(66,126,116);" width="30%" align='center' valign="middle"> 
+				<br>
+				<span class="CHword">還</span><br>
+				<span style="color:rgba(255,244,206);">hái</span><br><br>
+				</td>
+				<td style="color:rgba(202,219,216); background-color:rgba(74,144,132);" 
+				width="13%" align='center' valign="middle">Adv.</td>
+			  <td style="background-color:rgba(202,219,216);" width="50%" align='center' valign="middle">also; inaddition</td>
+		　</tr>
+	  </table>
+    </div>
+	
+    <div class="col-sm-6 align-self-center" style="padding:20px;">
+     <table width="100%" border="0">
+		　<tr onclick="right6()">
+			　<td id="btn" width="15%" align='center' valign="middle"><img src="img/table/btn.png" width="100%"></td>
+			　<td width="85%" align='center' valign="middle"><img src="img/table/6R_test.png" width="100%"></td>
+		　</tr>
+	  </table>
+	  <br>
+	  <img src="img/table/6R.jpg" width="100%">
+    </div>
+	
+  </div>
+</div>
+</div>
+<br>
+
+<!-- 7 --> 
+<div id="7" name="7" class="swiper-slide">
+<div class="container" style=" background-color:#f6faf4;">
+  <div class="row">
+    <div class="col-sm-6 align-self-center" style="padding:20px;">
+	<img id="top" src="img/7.png" width="100%">
+      <table width="100%" border="0">
+		　<tr onclick="left7_1()">
+			　<td id="btn" width="15%" align='center' valign="middle"><img src="img/table/btn.png" width="100%"></td>
+			<td width="3%"></td>
+			　<td style="line-height:1.2; background-color:rgba(66,126,116);" width="30%" align='center' valign="middle"> 
+				<br>
+				<span class="CHword">日文</span><br>
+				<span style="color:rgba(255,244,206);">Rìwén </span><br><br>
+				</td>
+				<td style="color:rgba(202,219,216); background-color:rgba(74,144,132);" 
+				width="13%" align='center' valign="middle">N.</td>
+			  <td style="background-color:rgba(202,219,216);" width="50%" align='center' valign="middle">Japanese</td>
+		　</tr>
+	  </table>
+    </div>
+	
+    <div class="col-sm-6 align-self-center" style="padding:20px;">
+     <table width="100%" border="0">
+		　<tr onclick="right7()">
+			　<td id="btn" width="15%" align='center' valign="middle"><img src="img/table/btn.png" width="100%"></td>
+			　<td width="85%" align='center' valign="middle"><img src="img/table/7R_test.png" width="100%"></td>
+		　</tr>
+	  </table>
+	  <br>
+	  <img src="img/table/7R.jpg" width="100%">
+    </div>
+	
+  </div>
+</div>
+</div>
+<br>
+
+<!-- 8 --> 
+<div id="8" name="8" class="swiper-slide">
+<div class="container" style=" background-color:#f6faf4;">
+  <div class="row">
+    <div class="col-sm-6 align-self-center" style="padding:20px;">
+	<img id="top" src="img/8.png" width="100%">
+      <table width="100%" border="0">
+		　<tr onclick="left8_1()">
+			　<td id="btn" width="15%" align='center' valign="middle"><img src="img/table/btn.png" width="100%"></td>
+			<td width="3%"></td>
+			　<td style="line-height:1.2; background-color:rgba(66,126,116);" width="30%" align='center' valign="middle"> 
+				<br>
+				<span class="CHword">語言</span><br>
+				<span style="color:rgba(255,244,206);">yǔyán </span><br><br>
+				</td>
+				<td style="color:rgba(202,219,216); background-color:rgba(74,144,132);" 
+				width="13%" align='center' valign="middle">N.</td>
+			  <td style="background-color:rgba(202,219,216);" width="50%" align='center' valign="middle">language </td>
+		　</tr>
+	  </table>
+    </div>
+	
+    <div class="col-sm-6 align-self-center" style="padding:20px;">
+     <table width="100%" border="0">
+		　<tr onclick="right8()">
+			　<td id="btn" width="15%" align='center' valign="middle"><img src="img/table/btn.png" width="100%"></td>
+			　<td width="85%" align='center' valign="middle"><img src="img/table/8R_test.png" width="100%"></td>
+		　</tr>
+	  </table>
+	  <br>
+	  <img src="img/table/8R.jpg" width="100%">
+    </div>
+	
+  </div>
+</div>
+</div>
+<br>
+
+<!-- 9 --> 
+<div id="9" name="9" class="swiper-slide">
+<div class="container" style=" background-color:#f6faf4;">
+  <div class="row">
+    <div class="col-sm-6 align-self-center" style="padding:20px;">
+	<img id="top" src="img/9.png" width="100%">
+      <table width="100%" border="0">
+		　<tr onclick="left9_1()">
+			　<td id="btn" width="15%" align='center' valign="middle"><img src="img/table/btn.png" width="100%"></td>
+		<td width="3%"></td>
+			　<td style="line-height:1.2; background-color:rgba(66,126,116);" width="40%" align='center' valign="middle"> 
+				<br>
+				<span class="CHword">課本</span><br>
+				<span style="color:rgba(255,244,206);">kèběn </span><br><br>
+				</td>
+				<td style="color:rgba(202,219,216); background-color:rgba(74,144,132);" 
+				width="13%" align='center' valign="middle">N.</td>
+			  <td style="background-color:rgba(202,219,216);" width="40%" align='center' valign="middle">textbook </td>
+		　</tr>
+	  </table>
+    </div>
+	
+    <div class="col-sm-6 align-self-center" style="padding:20px;">
+     <table width="100%" border="0">
+		　<tr onclick="right9()">
+			　<td id="btn" width="15%" align='center' valign="middle"><img src="img/table/btn.png" width="100%"></td>
+			　<td width="85%" align='center' valign="middle"><img src="img/table/9R_test.png" width="100%"></td>
+		　</tr>
+	  </table>
+	  <br>
+	  <img src="img/table/9R.jpg" width="100%">
+    </div>
+	
+  </div>
+</div>
+</div>
+<br>
+
+<!-- 10 --> 
+<div id="10" name="10" class="swiper-slide">
+<div class="container" style=" background-color:#f6faf4;">
+  <div class="row">
+    <div class="col-sm-6 align-self-center" style="padding:20px;">
+	<img id="top" src="img/10.png" width="100%">
+      <table width="100%" border="0">
+		　<tr onclick="left10_1()">
+			　<td id="btn" width="15%" align='center' valign="middle"><img src="img/table/btn.png" width="100%"></td>
+		<td width="3%"></td>
+			　<td style="line-height:1.2; background-color:rgba(66,126,116);" width="40%" align='center' valign="middle"> 
+				<br>
+				<span class="CHword">句子</span><br>
+				<span style="color:rgba(255,244,206);">jùzi</span><br><br>
+				</td>
+				<td style="color:rgba(202,219,216); background-color:rgba(74,144,132);" 
+				width="13%" align='center' valign="middle">N.</td>
+			  <td style="background-color:rgba(202,219,216);" width="40%" align='center' valign="middle">sentence  </td>
+		　</tr>
+	  </table>
+    </div>
+	
+    <div class="col-sm-6 align-self-center" style="padding:20px;">
+     <table width="100%" border="0">
+		　<tr onclick="right10()">
+			　<td id="btn" width="15%" align='center' valign="middle"><img src="img/table/btn.png" width="100%"></td>
+			　<td width="85%" align='center' valign="middle"><img src="img/table/10R_test.png" width="100%"></td>
+		　</tr>
+	  </table>
+	  <br>
+	  <img src="img/table/10R.jpg" width="100%">
+    </div>
+	
+  </div>
+</div>
+</div>
+
+
+
+<!-- 11 --> 
+<div id="11" name="11" class="swiper-slide">
+<div class="container" style=" background-color:#f6faf4;">
+  <div class="row">
+    <div class="col-sm-6 align-self-center" style="padding:20px;">
+	<img id="top" src="img/11.png" width="100%">
+      <table width="100%" border="0">
+		　<tr onclick="left11_1()">
+			　<td id="btn" width="15%" align='center' valign="middle"><img src="img/table/btn.png" width="100%"></td>
+		<td width="3%"></td>
+			　<td style="line-height:1.2; background-color:rgba(66,126,116);" width="30%" align='center' valign="middle"> 
+				<br>
+				<span class="CHword">喔</span><br>
+				<span style="color:rgba(255,244,206);">ō</span><br><br>
+				</td>
+				<td style="color:rgba(202,219,216); background-color:rgba(74,144,132);" 
+				width="13%" align='center' valign="middle">Ptc.</td>
+			  <td style="background-color:rgba(202,219,216);" width="50%" align='center' valign="middle">a sentence<br> final particle</td>
+		　</tr>
+	  </table>
+    </div>
+	
+    <div class="col-sm-6 align-self-center" style="padding:20px;">
+     <table width="100%" border="0">
+		　<tr onclick="right11()">
+			　<td id="btn" width="15%" align='center' valign="middle"><img src="img/table/btn.png" width="100%"></td>
+			　<td width="85%" align='center' valign="middle"><img src="img/table/11R_test.png" width="100%"></td>
+		　</tr>
+	  </table>
+	  <br>
+	  <img src="img/table/11R.jpg" width="100%">
+    </div>
+	
+  </div>
+</div>
+</div>
+
+  
+
+<!-- 13 -->  <!--
+<div id="13" name="13" class="swiper-slide">
+<div class="container" style=" background-color:#f6faf4;">
+  <div class="row">
+    <div class="col-sm-6 align-self-center" style="padding:20px;">
+	<img id="top" src="img/13.png" width="100%">
+      <table width="100%" border="0">
+		　<tr onclick="left10_1()">
+			　<td id="btn" width="15%" align='center' valign="middle"><img src="img/table/btn.png" width="100%"></td>
+		<td width="3%"></td>
+			　<td style="line-height:1.2; background-color:rgba(66,126,116);" width="30%" align='center' valign="middle"> 
+				<br>
+				<span class="CHword">週末</span><br>
+				<span style="color:rgba(255,244,206);">zhōumò</span><br><br>
+				</td>
+				<td style="color:rgba(202,219,216); background-color:rgba(74,144,132);" 
+				width="10%" align='center' valign="middle">N.</td>
+			  <td style="background-color:rgba(202,219,216);" width="50%" align='center' valign="middle">weekend</td>
+		　</tr>
+	  </table>
+    </div>
+	
+    <div class="col-sm-6 align-self-center" style="padding:20px;">
+     <table width="100%" border="0">
+		　<tr onclick="right10()">
+			　<td id="btn" width="15%" align='center' valign="middle"><img src="img/table/btn.png" width="100%"></td>
+			　<td width="85%" align='center' valign="middle"><img src="img/table/13R_test.png" width="100%"></td>
+		　</tr>
+	  </table>
+	  <br>
+	  <img src="img/table/10R.jpg" width="100%">
+    </div>
+	
+  </div>
+</div>
+</div>
+
+-->
+
+<!-- btn -->
+</div>
+
+<br>
+<div class="row foot">
+					<div class="col-md-12" style="text-align:center;">
+						<img alt="" src="wzu_logo2020.png" style="width: 30px; height:32px;"/></a>
+						<p style="font-size:0.8rem; line-height:1rem;"><span style="color:rgba(66,126,116);">©Copyright 2021 Wenzao Ursuline University of Languages ALL RIGHTS RESERVED</span></p>
+
+					</div>
+				</div>
+				
+				
+	   <div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+</div>
+
+				
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+	<script>
+	 var swiper = new Swiper('.swiper-container', {
+	 autoHeight: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+	  pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + '</span>';  
+        }, 
+      },
+    });
+	
+var R1 = document.getElementById("R1");
+var R1_2 = document.getElementById("R1_2");
+	var L1_1 = document.getElementById("L1_1");
+	var L1_2 = document.getElementById("L1_2");
+	
+	function right1(){
+	  R1.play();
+	}	
+	function right1_2(){
+	  R1_2.play();
+	}	
+	function left1(){
+	  L1_1.play();
+	}
+	function left1_2(){
+	  L1_2.play();
+	}
+	
+	var R2 = document.getElementById("R2");
+	var L2_1 = document.getElementById("L2_1");
+	var L2_2 = document.getElementById("L2_2");
+	
+	function right2(){
+	  R2.play();
+	}	
+	function left2_1(){
+	  L2_1.play();
+	}
+	function left2_2(){
+	  L2_2.play();
+	}
+	
+	var R3 = document.getElementById("R3");
+	var R3_2 = document.getElementById("R3_2");
+	var L3_1 = document.getElementById("L3_1");
+	var L3_2 = document.getElementById("L3_2");
+	
+	function right3(){
+	  R3.play();
+	}	
+	function right3_2(){
+	  R3_2.play();
+	}
+	function left3_1(){
+	  L3_1.play();
+	}
+	function left3_2(){
+	  L3_2.play();
+	}
+	
+	var R4 = document.getElementById("R4");
+	var R4_2 = document.getElementById("R4_2");
+	var L4_1 = document.getElementById("L4_1");
+	var L4_2 = document.getElementById("L4_2");
+	
+	function right4(){
+	  R4.play();
+	}	
+	function right4_2(){
+	  R4_2.play();
+	}
+	function left4_1(){
+	  L4_1.play();
+	}
+	function left4_2(){
+	  L4_2.play();
+	}
+	
+	var R5 = document.getElementById("R5");
+	var R5_2 = document.getElementById("R5_2");
+	var R5_3 = document.getElementById("R5_3");
+	var L5_1 = document.getElementById("L5_1");
+	var L5_2 = document.getElementById("L5_2");
+	var L5_3 = document.getElementById("L5_3");
+	
+	function right5(){
+	  R5.play();
+	}	
+	function right5_2(){
+	  R5_2.play();
+	}
+	function right5_3(){
+	  R5_3.play();
+	}
+	function left5_1(){
+	  L5_1.play();
+	}
+	function left5_2(){
+	  L5_2.play();
+	}
+	function left5_3(){
+	  L5_3.play();
+	}
+	
+	var R6 = document.getElementById("R6");
+	var L6_1 = document.getElementById("L6_1");
+	var L6_2 = document.getElementById("L6_2");
+	
+	function right6(){
+	  R6.play();
+	}	
+	function left6_1(){
+	  L6_1.play();
+	}
+	function left6_2(){
+	  L6_2.play();
+	}
+	
+	var R7 = document.getElementById("R7");
+	var L7_1 = document.getElementById("L7_1");
+	var L7_2 = document.getElementById("L7_2");
+	
+	function right7(){
+	  R7.play();
+	}	
+	function left7_1(){
+	  L7_1.play();
+	}
+	function left7_2(){
+	  L7_2.play();
+	}
+
+	var R8 = document.getElementById("R8");
+	var L8_1 = document.getElementById("L8_1");
+	
+	function right8(){
+	  R8.play();
+	}	
+	function left8_1(){
+	  L8_1.play();
+	}
+	
+	var R9 = document.getElementById("R9");
+	var L9_1 = document.getElementById("L9_1");
+	
+	function right9(){
+	  R9.play();
+	}	
+	function left9_1(){
+	  L9_1.play();
+	}
+	
+	var R10 = document.getElementById("R10");
+	var L10_1 = document.getElementById("L10_1");
+	
+	function right10(){
+	  R10.play();
+	}	
+	function left10_1(){
+	  L10_1.play();
+	}
+	
+	var R11 = document.getElementById("R11");
+	var L11_1 = document.getElementById("L11_1");
+	
+	function right11(){
+	  R11.play();
+	}	
+	function left11_1(){
+	  L11_1.play();
+	}
+	
+	$(function(){
+if($(window).width()<900){ 
+$('.navbar a').on('click', function(){
+    $('.navbar-toggler').click();
+  });
+}
+});
+	</script>
+</body>
+</html>
